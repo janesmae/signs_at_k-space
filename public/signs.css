@@ -1,0 +1,85 @@
+@page {
+        margin: 0;
+        size: A4 landscape;
+}
+
+html {
+        font-family: 'Orbitron', sans-serif;
+}
+
+body {
+        margin: 0;
+        width: 297mm;
+        height: 209mm;
+}
+
+.sheet {
+        position: relative;
+        box-sizing: border-box;
+        page-break-after: always;
+        padding: 10mm;
+}
+
+/* Put everything in the correct location */
+
+.logo {
+        font-size: 15mm;
+}
+
+.main {
+        font-size: 25mm;
+        width: 100%;
+        height: 12.5cm;
+        margin: 1cm 0;
+        text-align: center;
+}
+
+.subline {
+        font-size: 12mm;
+        text-align: center;
+}
+
+/** Screen **/
+
+@media screen {
+        body {
+                background: #eee
+        }
+        .sheet {
+                background: white;
+                box-shadow: 0 .5mm 2mm rgba(0, 0, 0, .3);
+                margin: 20mm auto;
+        }
+        .sheet, .sheet::before, .sheet::after {
+                box-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
+                border: 1px solid #bbb;
+        }
+        .sheet::before, .sheet::after {
+                content: "";
+                position: absolute;
+                width: 297mm;
+                height: 210mm;
+                background-color: #eee;
+        }
+        .sheet::before {
+                right: 15px;
+                top: 0;
+                transform: rotate(-1deg);
+                z-index: -1;
+        }
+        .sheet::after {
+                top: 5px;
+                right: -5px;
+                transform: rotate(1deg);
+                z-index: -2;
+        }
+}
+
+@media print {
+        body {
+                width: 297mm
+        }
+        .sheet {
+                overflow: hidden;
+        }
+}
