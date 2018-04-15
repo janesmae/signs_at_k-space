@@ -8,16 +8,17 @@ html {
 }
 
 body {
-        margin: 0;
-        width: 297mm;
-        height: 209mm;
+        margin: 0
 }
 
 .sheet {
+        margin: 0;
         position: relative;
         box-sizing: border-box;
         page-break-after: always;
         padding: 10mm;
+        width: 297mm;
+        height: 209mm
 }
 
 /* Put everything in the correct location */
@@ -37,6 +38,17 @@ body {
 .subline {
         font-size: 12mm;
         text-align: center;
+}
+
+/* Fix Browser added stylesheet */
+
+[contenteditable="true"]:active, [contenteditable="true"]:focus {
+        border: none;
+        outline: none;
+}
+
+[contenteditable="true"]:focus>style {
+        display: block;
 }
 
 /** Screen **/
@@ -81,5 +93,8 @@ body {
         }
         .sheet {
                 overflow: hidden;
+                /* Make input caret transparent */
+                color: transparent;
+                text-shadow: 0 0 0 #000;
         }
 }
