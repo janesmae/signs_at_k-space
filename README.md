@@ -1,4 +1,4 @@
-# Digital Signs @ k-space.ee
+# Signs @ k-space.ee
 
 Make signs the easy way. Just open up your browser, type in the info and print! Yes, print!
 
