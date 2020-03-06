@@ -1,6 +1,6 @@
 # Signs @ k-space.ee
 
-Make signs the easy way. Just open up your browser, type in the info and print! Yes, print!
+Make signs the easy way. Just open up your browser, type in the info and print! Yes, print! Go check it out at [https://janesmae.github.io/signs_at_k-space/](https://janesmae.github.io/signs_at_k-space/).
 
 ![select](/demo.gif)
 

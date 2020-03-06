@@ -12,6 +12,7 @@ body {
 }
 
 .sheet {
+        display: table;
         margin: 0;
         position: relative;
         box-sizing: border-box;
@@ -24,10 +25,12 @@ body {
 /* Put everything in the correct location */
 
 .logo {
+        display: table-row;
         font-size: 15mm;
 }
 
 .main {
+        display: table-row;
         font-size: 25mm;
         width: 100%;
         height: 12.5cm;
@@ -36,19 +39,19 @@ body {
 }
 
 .subline {
+        display: table-row;
         font-size: 12mm;
         text-align: center;
 }
 
-/* Fix Browser added stylesheet */
-
-[contenteditable="true"]:active, [contenteditable="true"]:focus {
+.editable {
+       display: table-cell;
+       vertical-align: middle;
+        -webkit-user-modify: read-write;
+        -moz-user-modify: read-write;
+        user-modify: read-write;
         border: none;
         outline: none;
-}
-
-[contenteditable="true"]:focus>style {
-        display: block;
 }
 
 /** Screen **/
