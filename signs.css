@@ -18,6 +18,7 @@ body {
         box-sizing: border-box;
         page-break-after: always;
         padding: 10mm;
+        padding-top: 5mm;
         width: 297mm;
         height: 209mm
 }
@@ -29,6 +30,12 @@ body {
         font-size: 15mm;
 }
 
+.logo img {
+        height:35mm;
+        pointer-events: none;
+        float:inline-start;
+}
+
 .main {
         display: table-row;
         font-size: 25mm;
@@ -36,12 +43,17 @@ body {
         height: 12.5cm;
         margin: 1cm 0;
         text-align: center;
+        margin-top: 0px;
+        position:relative;
+        top:-7.5mm;
 }
 
 .subline {
         display: table-row;
         font-size: 12mm;
         text-align: center;
+        position:relative;
+        top:-3.75mm;
 }
 
 .editable {
@@ -101,4 +113,3 @@ body {
                 text-shadow: 0 0 0 #000;
         }
 }
-
