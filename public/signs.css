@@ -56,7 +56,7 @@ body {
     display: table-cell;
     vertical-align: middle;
     -webkit-user-modify: read-write;
-    -moz-user-modify: read-write;
+       -moz-user-modify: read-write;
     user-modify: read-write;
     border: none;
     outline: none;
