@@ -3,8 +3,13 @@
     size: A4 landscape;
 }
 
-html {
-    font-family: 'Orbitron', sans-serif;
+@font-face {
+    font-family: 'D-DIN Bold';
+    src: url("https://media.k-space.ee/fonts/D-DIN-Bold.woff2") format("woff2");
+    src: url("https://media.k-space.ee/fonts/D-DIN-Bold.woff") format('woff');
+    src: url("https://media.k-space.ee/fonts/D-DIN-Bold.ttf") format('ttf');
+    src: url("https://media.k-space.ee/fonts/D-DIN-Bold.otf") format('otf');
+    src: url("D-DIN-Bold.woff2") format("woff2");
 }
 
 body {
@@ -20,7 +25,7 @@ body {
     padding: 10mm;
     padding-top: 5mm;
     width: 297mm;
-    height: 209mm
+    height: 209mm;
     border-spacing: 0;
 }
 
@@ -33,10 +38,11 @@ body {
 .logo img {
     height:35mm;
     pointer-events: none;
-    float:inline-start;
+    float:initial;
 }
 
 .main {
+    font-family: "D-DIN Bold", sans-serif;
     display: table-row;
     font-size: 25mm;
     width: 100%;
@@ -47,6 +53,7 @@ body {
 }
 
 .subline {
+    font-family: "D-DIN Bold", sans-serif;
     display: table-row;
     font-size: 12mm;
     text-align: center;
@@ -62,7 +69,6 @@ body {
     outline: none;
 
     -ms-word-break: break-all;
-    word-break: break-all;
 
     /* Non standard for webkit */
     word-break: break-word;
